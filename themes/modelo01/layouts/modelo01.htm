@@ -1,0 +1,32 @@
+description = "Modelo contábil 01"
+==
+<!DOCTYPE html>
+<html>
+    <head>
+     <meta name="description" content="{{ this.page.meta_description }}">
+        <meta name="title" content="{{ this.page.meta_title }}">
+        <meta name="author" content="Winter CMS -  Luiz Augusto">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta name="generator" content="Winter CMS">
+        <link href="{{ 'assets/css/bootstrap-grid.min.css'|theme }}" rel="stylesheet">
+        {# <link href="{{ 'assets/css/support.css'|theme }}" rel="stylesheet"> #}
+        <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.12.1/css/all.css" />
+         <link href="{{ 'assets/css/style.css'|theme }}" rel="stylesheet">
+         <script src="{{ 'assets/js/jquery.js'|theme }}"></script>
+        {% styles %}
+    </head>
+    <body>
+    
+     <!-- Scripts -->
+        <script src="{{ 'assets/js/jquery.mask.js'|theme }}"></script>
+        <script src="{{ 'assets/js/scripts.js'|theme }}"></script>
+        {% snowboard all %}
+        {% scripts %}
+    </body>
+</html>
+{% partial "site/header" %}
+
+    {% page %}
+
+{% partial "site/footer" %}
+<script type="text/javascript" src="//www.freeprivacypolicy.com/public/cookie-consent/4.0.0/cookie-consent.js" charset="UTF-8"></script>
