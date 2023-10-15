@@ -1,6 +1,6 @@
 title = "Principal"
 url = "/principal"
-layout = "modelo01"
+layout = "default"
 is_hidden = 0
 ==
 <div class="banner container-fluid pt-7 pb-7">
@@ -36,7 +36,7 @@ is_hidden = 0
         </div>
         <div class="col-lg-6 col-md-7 mb-2">
             <div class="container parceria">
-                <img src="assets/imgs/img-servicos.jpg" alt="Nossos Serviços" class="clip-path">
+                <img src="{{asset('assets/imgs/img-servicos.jpg' | theme)}}" alt="Nossos Serviços" class="clip-path">
                 <h2 class="h1 text-align-center">Parceria que <span class="display-2">dá certo!</span></h2>
             </div>
         </div>
@@ -74,21 +74,21 @@ is_hidden = 0
                     <div class="row">
                         <div class="col-lg-4">
                             <a href="certidoes.php" class="container d-block pt-1 pb-1 links-utils">
-                                <img src="assets/imgs/certidoes.jpg" alt="Certidões Negativas" class="clip-path">
+                                <img src="{{asset('assets/imgs/certidoes.jpg' | theme)}}" alt="Certidões Negativas" class="clip-path">
                                 <p class="mt-0"><strong>Certidões Negativas</strong></p>
                                 <p class="font-weight-300">Certidões em âmbito Federal, consultas do Simples e etc.</p>
                             </a>
                         </div>
                         <div class="col-lg-4">
                             <a href="modelos-documentos.php" class="container d-block pt-1 pb-1 links-utils">
-                                <img src="assets/imgs/modelos.jpg" alt="Modelos de Documentos" class="clip-path">
+                                <img src="{{asset('assets/imgs/modelos.jpg' | theme)}}" alt="Modelos de Documentos" class="clip-path">
                                 <p class="mt-0"><strong>Modelos de Documentos</strong></p>
                                 <p class="font-weight-300">Contratos, Declarações, Editais, Procurações e muitos outros.</p>
                             </a>
                         </div>
                         <div class="col-lg-4">
                             <a href="agendas.php" class="container d-block pt-1 pb-1 links-utils">
-                                <img src="assets/imgs/agendas.jpg" alt="Agendas de Obrigações" class="clip-path">
+                                <img src="{{asset('assets/imgs/agendas.jpg' | theme)}}" alt="Agendas de Obrigações" class="clip-path">
                                 <p class="mt-0"><strong>Agendas de Obrigações</strong></p>
                                 <p class="font-weight-300">Tenha acessos as agendas  Estaduais, Trabalhista e Federal.</p>
                             </a>
