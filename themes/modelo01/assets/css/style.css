@@ -293,7 +293,7 @@ table td {
     content: "";
     width: 50%;
     height: 100%;
-    background-image: url(assets/imgs/fd-solucoes.jpg);
+    background-image: url(['assets/imgs/fd-solucoes.jpg'|theme]);
     background-position: center;
     background-size: cover
 }
