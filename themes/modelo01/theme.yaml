@@ -1,0 +1,9 @@
+name: 'Modelo de site contábil 1'
+description: 'Este é um modelo de site contábil'
+author: 'Luiz Augusto'
+homepage: 'http://localhost/'
+code: winter-cms
+form:
+    fields:
+        googleanalytics_id:
+            label: 'Google Analytics ID'
