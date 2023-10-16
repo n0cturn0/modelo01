@@ -1,0 +1,40 @@
+description = "Default layout"
+==
+<!DOCTYPE html>
+<html>
+    <head>
+     <meta name="description" content="{{ this.page.meta_description }}">
+        <meta name="title" content="{{ this.page.meta_title }}">
+        <meta name="author" content="Winter CMS -  Luiz Augusto">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta name="generator" content="Winter CMS">
+        <!-- Arquivos CSS -->
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.14.0/css/all.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Be+Vietnam+Pro:wght@100;200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+    <link href="{{ 'assets/css/style.css'|theme }}" rel="stylesheet">
+    <script type="text/javascript" src="//www.freeprivacypolicy.com/public/cookie-consent/4.0.0/cookie-consent.js" charset="UTF-8"></script>
+ 
+    <script src="{{asset('assets/js/jquery.min.js'|theme)}}"></script> 
+    <link rel="shortcut icon" href="{{asset('assets/imgs/favicon.png'|theme)}}" type="image/x-icon">
+    
+    
+        {% styles %}
+    </head>
+    <body>
+    
+     <!-- Scripts -->
+        <script src="{{asset('assets/js/jquery.mask.js'|theme) }}"></script>
+        <script src="{{asset('assets/js/cycle2.js'|theme)}}"></script>
+        <script src="{{asset('assets/js/cycle2.tile.min.js'|theme)}}"></script>
+        <script src="{{asset('assets/js/owl.carousel.min.js'|theme)}}"></script>
+        <script src="{{ 'assets/js/scripts.js'|theme }}"></script>
+        {% snowboard all %}
+        {% scripts %}
+    </body>
+</html>
+{% partial "site/header" %}
+
+    {% page %}
+
+{% partial "site/footer" %}

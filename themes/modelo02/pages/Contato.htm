@@ -1,0 +1,74 @@
+title = "Contato"
+url = "/contato"
+layout = "default"
+is_hidden = 0
+==
+<article class="background-white">
+
+<div class="container"> <a id="form"></a>
+    <div class="row">
+        <div class="col-lg-5 mt-5 mb-4 mb-lg-0">
+            <div class="bkg-bs2 cor p-2 p-lg-6 text-align-justify text-align-lg-left d-flex flex-column align-items-start" style="border-radius: 5px;">
+                <h4 class="font-weight-300"> Tem alguma dúvida? </h4>
+                <h2 class="display-4 font-weight-500"> Fale <span class="font-weight-800">conosco agora </span></h2>
+                <p class="m-0"> Mande uma mensagem diretamente para nosso WhatsApp e vamos conversar sobre o seu caso. Você também pode nos enviar um e-mail direto usando o formulário. </p>
+                <p class="mb-0"> <a href="https://api.whatsapp.com/send?phone=5500000000000&text=Olá,%20estou%20entrando%20em%20contato%20pelo%20site!" target="_blank" class="bt bt-bwv text-transform-uppercase mb-0 cor-c2" style="font-variant: small-caps;"> <i class="mr-1 fab fa-fw fa-whatsapp"></i> <small> Whatsapp </small> </a> </p>
+                <p class="mb-0"> <a href="tel:550000000000" target="_blank" class="bt bt-bwv text-transform-uppercase mb-0 cor-c2" style="font-variant: small-caps;"> <i class="mr-1 fas fa-fw fa-phone-volume"></i> <small> Ligar </small> </a> </p>
+            </div>
+        </div>
+        <div class="col-lg-7 mt-5">
+            <div class="offset-lg-1">
+                <h4 class="font-weight-300 mb-1"> Entre em <span class="font-weight-700">contato </span> e faça uma <span class="font-weight-700">parceria </span>de sucesso! </h4>
+                <h2 class="font-weight-300"> Interessado em nossos <span class="font-weight-700"> serviços</span>?</h2> 
+                <form class="contato position-relative" class="py-5" id="formcontato" method="post">
+    <div class="d-flex flex-wrap">
+        <div class="d-flex flex-grow-1 contato-borda">
+            <i class="contato-icone fas fa-user-check"></i>
+            <input type="text" name="nome" id="formnome" placeholder="Digite seu Nome *" required />
+        </div>
+        <div class="d-flex flex-grow-1 contato-borda">
+            <i class="contato-icone fas fa-envelope-open"></i>
+            <input type="text" name="email" id="formemail" placeholder="Digite seu E-mail *" required />
+        </div>
+    </div>
+    <div class="d-flex flex-wrap">
+        <div class="d-flex flex-grow-1 contato-borda">
+            <i class="contato-icone fas fa-phone"></i>
+            <input type="text" name="telefone" id="formtelefone" class="celular-mask" placeholder="Digite seu Telefone *" required>
+        </div>
+        <div class="d-flex flex-grow-1 contato-borda">
+            <i class="contato-icone fas fa-mobile"></i>
+            <input type="celular" name="celular" id="formcelular" class="celular-mask" placeholder="Digite seu Celular">
+        </div>
+    </div>
+    <div class="d-flex flex-wrap">
+        <div class="d-flex flex-grow-1 contato-borda">
+            <i class="contato-icone fas fa-pencil-alt"></i>
+            <input type="assunto" name="assunto" id="formassunto" placeholder="Digite seu Assunto *" required>
+        </div>
+    </div>
+    <div class="d-flex contato-borda">
+        <i class="contato-icone fas fa-comment"></i>
+        <textarea name="mensagem" id="formmensagem" cols="40" rows="7" placeholder="Digite sua Mensagem *" required></textarea>
+    </div>
+    <p class="m-0"> <small> <em> * preenchimento de campo <span class="cor-c2">obrigatório</span> </em> </small> </p>
+    <a href="javascript:void(0);" onclick="reloadcaptcha_contato();" class="small"><i class="fas fa-redo mr-1"></i> Trocar imagem</a>
+    <div class="form-row">
+        <div class="d-flex flex-wrap flex-grow-1 contato-borda">
+            <div class="captcha"><img id="imgcaptcha-contato" src="captcha-contato.php" class="d-block" style="border-bottom: 1px solid #00bcd4;"></div>
+            <!-- <i class="contato-icone fas fa-pencil-alt"></i> -->
+            <input type="text" name="captcha" id="formcaptcha-contato" placeholder="Digite os caracteres ao lado *" required>
+        </div>
+    </div>
+    <p class="small">Os dados captados nesse formulário não serão utilizados por terceiros, apenas para uso interno de acordo com a <a href="lgpd.php">LGPD</a>. Ao enviar sua mensagem você concorda com nossa política de privacidade.</p>
+    <div>
+        <button type="submit" class="bt bt-b1 mt-2">Enviar mensagem <i class="fas fa-paper-plane border-left border-light ml-1 pl-1"></i></button>
+        <button type="reset" class="bt bt-b1 mt-2">Cancelar mensagem <i class="fas fa-eraser border-left border-light ml-1 pl-1"></i></button>
+    </div>
+    <div id="resultado"></div>
+</form>            </div>
+        </div>
+    </div>
+</div>
+
+</article>

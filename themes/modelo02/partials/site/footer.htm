@@ -1,17 +1,71 @@
-        <!-- Scripts -->
-        <script src="{{ [
-            '@jquery',
-            '@framework',
-            '@framework.extras',
+<footer class="bkg">
 
-            'assets/js/app.js',
-        ] | theme }}"></script>
-        {% scripts %}
+   
 
-        {% flash %}
-            <p data-control="flash-message" data-interval="7" class="flashmessage {{ type }}">
-                {{ message }}
-            </p>
-        {% endflash %}
-    </body>
+    <iframe class="mapa mt-7" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3675.2568845858164!2d-49.629155925012945!3d-22.903893979257102!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94c06a39daf95555%3A0x4243758b396d07a2!2sSitecontabil!5e0!3m2!1spt-BR!2sbr!4v1681932792243!5m2!1spt-BR!2sbr" width="100%" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+
+    <div class="position-relative bkg-b1">
+       
+
+        <div class="container py-5 mt-10">
+            <div class="row cor align-items-center justify-content-center">
+                <div class="col-lg-3">
+                    <h2 class="m-0 text-align-lg-right">Escritório de Contabilidade</h2>
+                </div>
+                <div class="col-lg-auto">
+                    <div class="linha-vertical"></div>
+                </div>
+                <div class="col-lg-3">
+                    <p class="m-0">Venha fazer uma parceria de Sucesso! Encontre em nossa empresa tudo o que precisa.</p>
+                </div>
+            </div>
+            <div class="row mt-4 cor justify-content-center align-items-lg-center">
+                <div class="col-lg-3 text-align-lg-right">
+                    <p class="m-0" > <i class="fas fa-map-marker-alt"></i> Endereço do local - nº 000 <br> Bairro local - Cidade/UF <br>  CEP. 00000-000 </p>
+                </div>
+                <div class="col-lg-3 text-align-lg-center">
+                    <p class="m-0"><i class="fas fa-phone"></i> (00) 0000-0000 </p>
+                    <a class="m-0" href="https://api.whatsapp.com/send?phone=5500000000000&text=Olá,%20estou%20entrando%20em%20contato%20pelo%20site!" target="_blank"> <i class="fab fa-whatsapp"></i> (00) 00000-0000 </a>
+                </div>
+                <div class="col-lg-3">
+                    <a class="m-0" href="mailto:contato@dominio.com.br"> <i class="fas fa-envelope"></i> contato@dominio.com.br </a>
+                    <p class="m-0"> <i class="fas fa-user"></i> CRC/UF 00000-0</p>
+                </div>
+            </div>
+
+            <div class="d-flex justify-content-center align-items-center mt-3">
+                <a class="redes" href="https://www.facebook.com/" target="_blank"><i class="fab fa-facebook-f"></i></a>
+                <a class="redes" href="https://twitter.com/" target="_blank"><i class="fab fa-twitter"></i></a>
+                <a class="redes" href="https://www.instagram.com/" target="_blank"><i class="fab fa-instagram"></i></a>
+                <a class="redes" href="https://www.linkedin.com/" target="_blank"><i class="fab fa-linkedin-in"></i></a>
+            </div>
+        </div>
+    </div>
+
+    <div class="bkg-b2">
+        <div class="container py-1">
+            <p class="m-0 cor text-align-center" style="font-size:18px">Copyright <i class="far fa-copyright"></i> 2023 <strong>Escritório de Contabilidade</strong> | Desenvolvido por <strong> <a href="https://sitecontabil.com.br/" target="_blank">Sitecontabil</a></strong></p>
+        </div>
+    </div>
+
+</footer>
+
+<!-- Arquivos JS -->
+<!-- Cookie Consent -->
+<script type="text/javascript" src="//www.freeprivacypolicy.com/public/cookie-consent/4.0.0/cookie-consent.js" charset="UTF-8"></script>
+<script type="text/javascript" charset="UTF-8">
+    var website_name = window.location.origin;
+    var politica = website_name+'/lgpd.php';
+document.addEventListener('DOMContentLoaded', function () {
+cookieconsent.run({"notice_banner_type":"simple","consent_type":"express","palette":"light","language":"pt","page_load_consent_levels":["strictly-necessary"],"notice_banner_reject_button_hide":false,"preferences_center_close_button_hide":false,"page_refresh_confirmation_buttons":false,"website_name":website_name,"website_privacy_policy_url":politica});
+});
+</script>
+<!-- End Cookie Consent -->
+<script src="{{asset('assets/js/jquery.mask.js'|theme)}}"></script>
+<script src="{{asset('assets/js/cycle2.js'|theme)}}"></script>
+<script src="{{asset('assets/js/cycle2.tile.min.js'|theme)}}"></script>
+<script src="{{asset('assets/js/owl.carousel.min.js'|theme)}}"></script>
+<script src="{{asset('assets/js/scripts.js'|theme)}}"></script>
+<script src="https://cdn.jsdelivr.net/gh/orestbida/cookieconsent@v2.9.2/dist/cookieconsent.js"></script>
+</body>
 </html>

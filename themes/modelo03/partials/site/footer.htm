@@ -1,0 +1,117 @@
+<footer class="bkg">
+    <div class="background-light py-10">
+        <div class="container"> <a id="form"></a>
+            <div class="row">
+                <div class="col-lg-4 mb-4 mb-lg-0">
+                    <div class="bkg-b2 cor p-2 p-lg-6 text-align-justify text-align-lg-left d-flex flex-column align-items-start" style="border-radius: 4px;">
+                        <h4 class="font-weight-300"> Tem alguma dúvida? </h4>
+                        <h2 class="display-4 font-weight-400"> Fale <span class="cor-c1 font-weight-600">conosco agora </span></h2>
+                        <p class="m-0"> De segunda-feira à sexta-feira das <span class="h5"> 08:00h </span>às <span class="h5">17:00h</span>  </p>
+                    </div>
+                </div>
+                <div class="col-lg">
+                    <div class="bkg-b3 p-2 p-lg-6" style="border-radius: 4px;">
+                        <h4 class="font-weight-300 mb-1"> Entre em <span class="cor-c2 font-weight-500">contato </span> e faça uma <span class="cor-c2 font-weight-500">parceria </span>de sucesso! </h4>
+                        <h2 class="font-weight-300"> Interessado em nossos <span class="cor-c2 font-weight-500"> serviços</span>?</h2> 
+                        <form class="contato position-relative" class="py-5" id="formcontato" method="post">
+    <div class="d-flex flex-wrap">
+        <div class="d-flex flex-grow-1 contato-borda">
+            <i class="contato-icone fas fa-user-check"></i>
+            <input type="text" name="nome" id="formnome" placeholder="Digite seu Nome *" required />
+        </div>
+        <div class="d-flex flex-grow-1 contato-borda">
+            <i class="contato-icone fas fa-envelope-open"></i>
+            <input type="text" name="email" id="formemail" placeholder="Digite seu E-mail *" required />
+        </div>
+    </div>
+    <div class="d-flex flex-wrap">
+        <div class="d-flex flex-grow-1 contato-borda">
+            <i class="contato-icone fas fa-phone"></i>
+            <input type="text" name="telefone" id="formtelefone" class="celular-mask" placeholder="Digite seu Telefone *" required>
+        </div>
+        <div class="d-flex flex-grow-1 contato-borda">
+            <i class="contato-icone fas fa-mobile"></i>
+            <input type="celular" name="celular" id="formcelular" class="celular-mask" placeholder="Digite seu Celular">
+        </div>
+    </div>
+    <div class="d-flex flex-wrap">
+        <div class="d-flex flex-grow-1 contato-borda">
+            <i class="contato-icone fas fa-pencil-alt"></i>
+            <input type="assunto" name="assunto" id="formassunto" placeholder="Digite seu Assunto *" required>
+        </div>
+    </div>
+    <div class="d-flex contato-borda" style="border-radius: 16px 4px 4px 4px; ">
+        <i class="contato-icone fas fa-comment"></i>
+        <textarea name="mensagem" id="formmensagem" cols="40" rows="7" placeholder="Digite sua Mensagem *" required></textarea>
+    </div>
+    <p class="m-0"> <small> <em> * preenchimento de campo <span class="cor-c2">obrigatório</span> </em> </small> </p>
+    <a href="javascript:void(0);" onclick="reloadcaptcha_contato();" class="small"><i class="fas fa-redo mr-1"></i> Trocar imagem</a>
+    <div class="form-row">
+        <div class="d-flex flex-wrap flex-grow-1 contato-borda">
+            <div class="captcha"><img id="imgcaptcha-contato" src="captcha-contato.php" class="d-block" style="border-radius:30px;"></div>
+            <!-- <i class="contato-icone fas fa-pencil-alt"></i> -->
+            <input type="text" name="captcha" id="formcaptcha-contato" placeholder="Digite os caracteres ao lado *" required>
+        </div>
+    </div>
+    <p class="small">Os dados captados nesse formulário não serão utilizados por terceiros, apenas para uso interno de acordo com a <a href="lgpd.php">LGPD</a>. Ao enviar sua mensagem você concorda com nossa política de privacidade.</p>
+    <div>
+        <button type="submit" class="bt bt-b2 mt-2">Enviar mensagem <i class="fas fa-paper-plane border-left border-light ml-1 pl-1"></i></button>
+        <button type="reset" class="bt bt-b2 mt-2">Cancelar mensagem <i class="fas fa-eraser border-left border-light ml-1 pl-1"></i></button>
+    </div>
+    <div id="resultado"></div>
+</form>                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+ 
+
+    <div class="position-relative bkg-b1 canto">
+      
+
+        <div class="container py-5">
+            <div class="row cor align-items-center justify-content-center">
+                <div class="col-lg-3 logo">
+                    <img class="m-0" src="{{asset('assets/imgs/logo.png'|theme)}}" alt="">
+                </div>
+                <div class="col-lg-auto">
+                    <div class="linha-vertical"></div>
+                </div>
+                <div class="col-lg-3">
+                    <p class="m-0">Venha fazer uma parceria de Sucesso! Encontre em nossa empresa tudo o que precisa.</p>
+                </div>
+            </div>
+            <div class="row mt-4 cor justify-content-center align-items-lg-center">
+                <div class="col-lg-3 text-align-lg-right">
+                    <p class="m-0" > <i class="fas fa-map-marker-alt"></i> Endereço do local - nº 000 <br> Bairro local - Cidade/UF <br>  CEP. 00000-000 </p>
+                </div>
+                <div class="col-lg-3 text-align-lg-center">
+                    <p class="m-0"><i class="fas fa-phone"></i> (00) 0000-0000 </p>
+                    <a class="m-0" href="https://api.whatsapp.com/send?phone=5500000000000&text=Olá,%20estou%20entrando%20em%20contato%20pelo%20site!" target="_blank"> <i class="fab fa-whatsapp"></i> (00) 00000-0000 </a>
+                </div>
+                <div class="col-lg-3">
+                    <a class="m-0" href="mailto:contato@dominio.com.br"> <i class="fas fa-envelope"></i> contato@dominio.com.br </a>
+                    <p class="m-0"> <i class="fas fa-user"></i> CRC/UF 00000-0</p>
+                </div>
+            </div>
+
+            <div class="d-flex justify-content-center align-items-center mt-3">
+                <a class="redes" href="https://www.facebook.com/" target="_blank"><i class="fab fa-facebook-f"></i></a>
+                <a class="redes" href="https://twitter.com/" target="_blank"><i class="fab fa-twitter"></i></a>
+                <a class="redes" href="https://www.instagram.com/" target="_blank"><i class="fab fa-instagram"></i></a>
+                <a class="redes" href="https://www.linkedin.com/" target="_blank"><i class="fab fa-linkedin-in"></i></a>
+            </div>
+        </div>
+    </div>
+
+    <div class="bkg-b2">
+        <div class="container py-1">
+            <p class="m-0 cor text-align-center" style="font-size:18px">Copyright <i class="far fa-copyright"></i> 2023 <strong>Escritório de Contabilidade</strong> | Desenvolvido por <strong> <a href="https://sitecontabil.com.br/" target="_blank">Sitecontabil</a></strong></p>
+        </div>
+    </div>
+
+</footer>
+
+</body>
+</html>
