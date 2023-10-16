@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title>{% placeholder page_title default %}{{ this.page.title }}{% endplaceholder %}</title>
+        {% partial "meta/styles" %}
+        {% partial "meta/seo" %}
+        <meta name="generator" content="Winter CMS">
+    </head>
+    {% set pageId = this.page.id %}
+    {% set pageTitle = this.page.title %}
+    {% if pageId is empty %}
+        {% set pageId = page.id %}
+    {% endif %}
+    {% if pageTitle is empty %}
+        {% set pageTitle = page.title %}
+    {% endif %}
+    <body class="page-{{ pageId }} layout-{{ this.layout.id }}">
+    <header>
+    <div class="topo line sdw">
+        <div class="container">
+            <div class="row align-items-center">
+                <div class="col-md-auto d-flex justify-content-center justify-content-md-start">
+                    <div class="logo py-1">
+                        <a href="index.php" target="_self"> <img src="{{asset('assets/imgs/logo.png'|theme)}}" alt=""> </a>
+                    </div>
+                </div>
+                <div class="col-md">
+                    <nav class="text-align-center">
+                        <a class="d-md-none botao-responsivo"> <i class="fa fa-lg fa-fw fa-bars pull-right"></i> Menu principal </a>
+                        <ul class="d-none d-md-flex flex-wrap align-items-center justify-content-center justify-content-md-end main-menu">
+                          
+                            <li><a href="index.php"> Home </a></li>
+                            <li><a href="empresa.php"> Empresa </a></li>
+                            <li><a href="servicos.php"> Serviços </a></li>
+                            <li><a href="utilitarios.php"> Utilitários </a></li>
+                            {# <li><a href="lgpd.php"> LGPD </a></li> #}
+                            <li><a href="javascript:movimenta('#form');"> Contato </a> </li>
+                            <a class="sear fa fa-search" href="javascript:janela_modal('#modal_search')"> </a>
+                        </ul>
+                    </nav>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- <div class="zero"></div> -->
+
+    <div class="banner">      
+        <div class="banner-foto" style="background:url({{asset('assets/imgs/b1.jpg'|theme)}}) left top; background-size :cover;" data-cycle-fx=tileSlide data-cycle-tile-count=8> </div>
+        <!-- <div class="banner-foto" style="background:url(assets/imgs/b2.jpg) left top; background-size :cover;" data-cycle-fx=tileSlide data-cycle-tile-count=8> </div> -->
+    </div>
+        
+    <div class="altura sdw last d-flex flex-column align-items-center justify-content-center">
+        <div class="container">   
+            <div class="owl-slogan owl-carousel owl-theme cor text-align-center">
+                <div>
+                    <h1 class="display-4" style="word-break: break-word;"> BEM-VINDO AO NOSSO SITE! </h1>
+                    <h5 class="font-weight-300">Conquiste e fidelize seus clientes com estratégias inteligentes, em uma época em que a <br> confiança está em primeiro lugar. </h5>
+                </div>
+                <div>
+                    <h1 class="display-4" style="word-break: break-word;"> ATINGINDO METAS </h1>
+                    <h5 class="font-weight-300"> Aqui você pode conhecer nossa filosofia de trabalho, nossos serviços e clientes, além de poder nos contatar para tirar dúvidas, dar sugestões entre outros. </h5>
+                </div>
+                <div>
+                    <h1 class="display-4" style="word-break: break-word;"> NOSSO COMPROMISSO É COM O SEU SUCESSO! </h1>
+                    <h5 class="font-weight-300">  Encontre tudo o que precisa em um escritório de contabilidade! Atuamos no mercado obtendo soluções pontuais. </h5>
+                </div>
+            </div> 
+        </div>
+    </div>
+
+   
+
+<div id="modal">
+    <div class="janela_modal" id="modal_search">
+    <h2 class="display-3 font-weight-600 my-1 cor-c2"> <span class="font-weight-300 cor"> Busca </span> Google </h2>
+        <form class="search" name="busca" action="https://www.google.com.br/search" method="get" target="_blank">
+            <div class="d-flex flex-wrap">
+                <input type="search" name="q" placeholder="Faça sua pesquisa" required="" size="40">
+                    <button> Buscar </button>
+            </div>
+        </form>
+    </div>
+</div>
+
+</header>
