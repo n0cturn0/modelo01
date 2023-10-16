@@ -1,0 +1,51 @@
+description = "Default layout"
+==
+<!DOCTYPE html>
+<html>
+    <head>
+     <meta name="description" content="{{ this.page.meta_description }}">
+        <meta name="title" content="{{ this.page.meta_title }}">
+        <meta name="author" content="Winter CMS -  Luiz Augusto">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta name="generator" content="Winter CMS">
+         <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.14.0/css/all.css">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Open+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,300;1,400;1,500;1,600;1,700;1,800&display=swap" rel="stylesheet">
+    <link href="{{asset('assets/css/style.css'|theme) }}" rel="stylesheet">
+        {% styles %}
+         <!-- AOS -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+
+    <!-- Favicon -->
+    <link rel="shortcut icon" href="{{asset('assets/imgs/favicon.png'|theme)}}" type="image/x-icon">
+    </head>
+    <body>
+    
+     <!-- Scripts -->
+        <script src="{{asset('assets/js/jquery.min.js'|theme)}}"></script> 
+        <div class="fale">
+    <a href="https://api.whatsapp.com/send?phone=5500000000000&text=Olá,%20estou%20entrando%20em%20contato%20pelo%20site!" target="_blank" class="whatsapp" title="WhatsApp"><i class="fab fa-whatsapp"></i></a>
+    <!-- <div class="fale-balao">Posso te ajudar?</div> -->
+    </div>
+
+    <script>
+    document.querySelector(".fale-balao").addEventListener("click", () => document.querySelector(".fale-balao").style.display = "none"); 
+    </script>
+    <script src="{{('assets/js/cookie.min.js'|theme)}}" data-cor="#5B2894" data-position="right"></script>
+<script src="{{asset('assets/js/jquery.mask.js'|theme)}}"></script>
+<script src="{{asset('assets/js/cycle2.js'|theme)}}"></script>
+<script src="{{asset('assets/js/cycle2.tile.min.js'|theme)}}"></script>
+<script src="{{asset('assets/js/owl.carousel.min.js'|theme)}}"></script>
+<script src="{{asset('assets/js/scripts.js'|theme)}}"></script>
+    </script>
+        {% snowboard all %}
+        {% scripts %}
+    </body>
+</html>
+{% partial "site/header" %}
+
+    {% page %}
+
+{% partial "site/footer" %}

@@ -12,13 +12,15 @@ description = "Default layout"
         <link rel="preconnect" href="https://fonts.gstatic.com">
         <link href="https://fonts.googleapis.com/css2?family=Be+Vietnam+Pro:wght@100;200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
         <link href="{{ 'assets/css/style.css'|theme }}" rel="stylesheet">
-        <link rel="shortcut icon" href="{{asset('assets/imgs/favicon.png'|theme)}}" type="image/x-icon">
-         <script src="{{ asset('assets/js/jquery.min.js'|theme)}}"></script> 
+     
+        
+            <link rel="shortcut icon" href="{{asset('assets/imgs/favicon.png'|theme)}}" type="image/x-icon">
         {% styles %}
     </head>
     <body>
     
      <!-- Scripts -->
+      <script src="{{asset('assets/js/jquery.min.js'|theme)}}"></script> 
         <script src="{{asset('assets/js/cookie.min.js'|theme)}}" data-cor="#36BCA4" data-position="left"></script>
         <script src="{{asset('assets/js/jquery.mask.js'|theme)}}"></script>
         <script src="{{asset('assets/js/cycle2.js'|theme)}}"></script>

@@ -63,28 +63,3 @@ function popup(url){
         'width=500, height=650, top=100, left=200, scrollbars=no'
     );
 }
-
-//Constrói a URL depois que o DOM estiver pronto        
-document.addEventListener("DOMContentLoaded", function() {
-    var url = encodeURIComponent(window.location.href);
-    var titulo = encodeURIComponent(document.title).replace(/'|"|%25/g, "");
-    //var via = encodeURIComponent("usuario-twitter"); //nome de usuário do twitter do seu site
-    
-    document.getElementById("share-facebook").href = "javascript:popup('https://www.facebook.com/sharer/sharer.php?u=" + url+"')";//altera a URL do botão facebook
-    document.getElementById("share-twitter").href = "javascript:popup('https://twitter.com/intent/tweet?url="+url+"&text="+titulo+"')";//altera a URL do botão
-    //document.getElementById("share-twitter").href = "javascript:popup(https://twitter.com/intent/tweet?url="+url+"&text="+titulo+"&via="+via+"')"; //se for usar o atributo via, utilize a seguinte url
-    
-    //tenta obter o conteúdo da meta tag description
-    var summary = document.querySelector("meta[name='description']");
-    summary = (!!summary)? summary.getAttribute("content") : null;
-    
-    //se a meta tag description estiver ausente...
-    if(!summary){
-        //...tenta obter o conteúdo da meta tag og:description
-        summary = document.querySelector("meta[property='og:description']");
-        summary = (!!summary)? summary.getAttribute("content") : null;
-    }
-    //altera o link do botão
-    linkedinLink = (!!summary)? "https://www.linkedin.com/shareArticle?mini=true&url="+url+"&title="+titulo + "&summary=" + encodeURIComponent(summary) : "https://www.linkedin.com/shareArticle?mini=true&url="+url+"&title="+titulo;
-    document.getElementById("share-linkedin").href = "javascript:popup('"+linkedinLink+"')";
-}, false);

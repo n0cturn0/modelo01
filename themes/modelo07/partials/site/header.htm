@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title>{% placeholder page_title default %}{{ this.page.title }}{% endplaceholder %}</title>
+        {% partial "meta/styles" %}
+        {% partial "meta/seo" %}
+        <meta name="generator" content="Winter CMS">
+    </head>
+    {% set pageId = this.page.id %}
+    {% set pageTitle = this.page.title %}
+    {% if pageId is empty %}
+        {% set pageId = page.id %}
+    {% endif %}
+    {% if pageTitle is empty %}
+        {% set pageTitle = page.title %}
+    {% endif %}
+    <body class="page-{{ pageId }} layout-{{ this.layout.id }}">
+    <header class="header position-relative">
+    <div class="container">
+        <div class="topo line sdw">
+            <div class="row align-items-center">
+                <div class="col-lg-auto d-flex justify-content-center justify-content-lg-start">
+                    <nav class="text-align-center">
+                        <a class="d-lg-none botao-responsivo"> <i class="fa fa-lg fa-fw fa-bars pull-right"></i> Menu principal </a>
+                        <ul class="d-none d-lg-flex flex-wrap align-items-center main-menu">
+                            <li><a href="index.php"> Home </a></li>
+                            <li><a href="empresa.php"> Empresa </a></li>
+                            <li><a href="servicos.php"> Serviços </a></li>
+                            <li><a href="lgpd.php"> LGPD </a></li>
+                            <li><a href="fale-conosco.php"> Contato </a> </li>
+                        </ul>
+                    </nav>
+                </div>
+                <div class="col-lg">
+                    <nav class="text-align-center">
+                        <ul class="d-none d-lg-flex flex-wrap align-items-center justify-content-center justify-content-lg-end main-menu">
+                            <!-- <li class="abre">
+                                <a style="cursor: default;"> serviços dominio <i class="fas fa-angle-down"></i> </a>
+                                <ul class="sm">           
+                                    <li><a href="#"> nome serviço </a> </li>
+                                    <li><a href="#"> nome serviço </a> </li>
+                                </ul>
+                            </li> -->
+                            <a class="sear fa fa-search" href="javascript:janela_modal('#modal_search')"> </a>
+                        </ul>
+                    </nav>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="mt-10 container text-align-center">
+        <img class="logo" src="{{asset('assets/imgs/logo.png'|theme)}}" alt="">
+    </div>
+    <!-- <div class="zero"></div> -->
+
+    <div class="banner">      
+        <div class="banner-foto" style="background:url({{asset('assets/imgs/b1.jpg'|theme)}});" data-cycle-fx=tileSlide data-cycle-tile-count=8> </div>
+        <!-- <div class="banner-foto" style="background:url(assets/imgs/b2.jpg) left top; background-size :cover;" data-cycle-fx=tileSlide data-cycle-tile-count=8> </div> -->
+    </div>
+    
+            <div class="altura last d-flex flex-column align-items-center justify-content-center">
+            <div class="container">
+                <div class="align-items-center text-align-center my-8">     
+                <!-- Caso queria carousel: owl-slogan owl-carousel -->
+                    <div class="owl-theme owl-slogan owl-carousel cor">
+                        <div>
+                            <h2 class="mb-0 mt-3" style="word-break: break-word;">Bem-vindo ao nosso site. </h2>
+                            <h5 class="font-weight-400 mt-0 mb-6"> Encontre tudo o que precisa em um escritório de contabilidade! <br> No mercado obtendo soluções pontuais. </h5>
+                        </div>
+                        <div>
+                            <h2 class="mb-0 mt-3" style="word-break: break-word;">Impulsionando seu negócio.</h2>
+                            <h5 class="font-weight-400 mt-0 mb-6">Descubra soluções contábeis personalizadas para o sucesso da sua empresa.</h5>
+                        </div>
+                        <div>
+                            <h2 class="mb-0 mt-3" style="word-break: break-word;">Contabilidade confiável e estratégica.</h2>
+                            <h5 class="font-weight-400 mt-0 mb-6">Focados no crescimento do seu negócio. Conte com nossa expertise financeira e alcance novos patamares.</h5>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    
+    <div id="modal">
+        <div class="janela_modal" id="modal_search">
+        <h2 class="display-3 font-weight-600 my-1 cor-c2"> <span class="font-weight-300 cor"> Busca </span> Google </h2>
+            <form class="search" name="busca" action="https://www.google.com.br/search" method="get" target="_blank">
+                <div class="d-flex flex-wrap">
+                    <input type="search" name="q" placeholder="Faça sua pesquisa" required="" size="40">
+                        <button> Buscar </button>
+                </div>
+            </form>
+        </div>
+    </div>
+
+    
+</header>
