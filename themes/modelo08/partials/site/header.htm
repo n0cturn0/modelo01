@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title>{% placeholder page_title default %}{{ this.page.title }}{% endplaceholder %}</title>
+        {% partial "meta/styles" %}
+        {% partial "meta/seo" %}
+        <meta name="generator" content="Winter CMS">
+    </head>
+    {% set pageId = this.page.id %}
+    {% set pageTitle = this.page.title %}
+    {% if pageId is empty %}
+        {% set pageId = page.id %}
+    {% endif %}
+    {% if pageTitle is empty %}
+        {% set pageTitle = page.title %}
+    {% endif %}
+    <body class="page-{{ pageId }} layout-{{ this.layout.id }}">
+    <div class="header">
+        <div class="container">
+            <div class="row justify-content-between align-items-center">
+                <div class="box-topo col-md-5 d-flex align-items-center justify-content-between justify-content-lg-end order-md-1">
+                    <div class="social">
+                        <a href="https://facebook.com/" target="_blank" class="fab fa-facebook-f social-midia" aria-hidden="true"></a>                        <a href="https://instagram.com/" target="_blank" class="fab fa-instagram social-midia" aria-hidden="true"></a>                        <a href="https://twitter.com/" target="_blank" class="fab fa-twitter social-midia" aria-hidden="true"></a>                        <a href="https://linkedin.com/" target="_blank" class="fab fa-linkedin-in social-midia" aria-hidden="true"></a>                    </div>
+                    
+                    <div class="nav-menu"><span></span><span></span><span></span><span></span></div>
+                </div>
+                
+                <div class="contact col-md-7">
+                <p><i class="fa fa-comments" aria-hidden="true"></i> (00) 1234-5678 | <span><i class="fa fa-envelope" aria-hidden="true"></i> <a href="mailto:contato@dominio.com.br">contato@dominio.com.br</a></span></p>
+                </div>
+            </div>
+            
+            <div class="logo-container row align-items-center order-md-2">
+                <div class="logo col-lg-4 d-flex justify-content-center">
+                    <a href="index.php"><img src="{{asset('assets/imagens/logo-contabil.png'|theme)}}" width="100%" height="auto" alt="logotipo-escritorio-contabil"></a>
+                </div>
+                
+                <div class="col-lg-6 offset-md-2">
+                    <nav id="menu" class="d-flex">
+                        <ul id="mainmenu" class="d-flex">
+                            <li><a href="index.php">Home</a></li>
+                            <li><a href="empresa.php">Empresa</a></li>
+                            <li><a href="servicos.php">Serviços</a></li>
+                            <li><a href="lgpd.php">LGPD</a></li>
+                            <li><a href="contato.php">Contato</a></li>
+                            <li><a href="https://sitecontabil.com.br/periodicos/sitecontabil/webmagazine"target="_blank">Infomativo</a></li>
+                        </ul>
+                    </nav>
+                </div>
+            </div>
+            
+            <div class="banner row align-items-center">
+                <div class="col-md-12 col-lg-5">
+                    <h2 class="h4 slogan">Fidelize seus clientes com estratégias inteligentes! <small>Anos de história e bons serviços na região.</small></h2>
+                    <a href="contato.php" class="slogan-btn">entre em contato</a>
+                </div>
+                
+                <div data-aos="fade-left" class="banner-img col-md-11 col-lg-6 offset-lg-1"></div>
+            </div>	    </div>
+    </div> 

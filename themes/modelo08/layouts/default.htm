@@ -1,0 +1,46 @@
+description = "Default layout"
+==
+<!DOCTYPE html>
+<html>
+    <head>
+     <meta name="description" content="{{ this.page.meta_description }}">
+        <meta name="title" content="{{ this.page.meta_title }}">
+        <meta name="author" content="Winter CMS -  Luiz Augusto">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta name="generator" content="Winter CMS">
+        <link rel="stylesheet" href="{{asset('assets/css/style.min.css'|theme)}}">
+        <link rel="stylesheet" href="{{asset('assets/css/bootstrap-grid.min.css'|theme)}}">
+        <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.10.2/css/all.css">
+        <link rel="stylesheet" href="{{asset('assets/css/aos.css'|theme)}}">
+       
+    
+    <!-- Favicon -->
+    <link rel="shortcut icon" href="{{asset('assets/imgs/favicon.png'|theme)}}" type="image/x-icon">
+    <script src="{{asset('assets/js/jquery.js'|theme)}}"></script>
+    {% styles %}
+    </head>
+    <body>
+    
+     <!-- Scripts -->
+    <script src="{{asset('assets/js/jquery.mask.js'|theme)}}"></script>
+	<script src="{{asset('assets/js/script.js'|theme)}}"></script>
+    <script src="{{asset('assets/js/aos.js'|theme)}}"></script>
+    <script> 
+        AOS.init({
+            offset: 200,
+            duration: 600,
+            easing: 'ease-in-sine',
+            delay: 100,
+            disable: 'mobile'
+        });
+    </script>
+    
+        {% snowboard all %}
+        {% scripts %}
+    </body>
+</html>
+{% partial "site/header" %}
+
+    {% page %}
+
+{% partial "site/footer" %}
