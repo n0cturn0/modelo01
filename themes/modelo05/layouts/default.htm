@@ -1,0 +1,40 @@
+description = "Default layout"
+==
+<!DOCTYPE html>
+<html>
+    <head>
+     <meta name="description" content="{{ this.page.meta_description }}">
+        <meta name="title" content="{{ this.page.meta_title }}">
+        <meta name="author" content="Winter CMS -  Luiz Augusto">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta name="generator" content="Winter CMS">
+        
+        {# <link href="{{ 'assets/css/support.css'|theme }}" rel="stylesheet"> #}
+        <script src="{{asset('assets/js/jquery.min.js'|theme)}}"></script>
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Be+Vietnam+Pro:wght@100;200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+    <link href="{{ 'assets/css/style.css'|theme }}" rel="stylesheet">
+    
+    <!-- Favicon -->
+    <link rel="shortcut icon" href="{{asset('assets/imgs/favicon.png'|theme)}}" type="image/x-icon">
+    {% styles %}
+    </head>
+    <body>
+    
+     <!-- Scripts -->
+    <script src="{{asset('assets/js/cycle2.js'|theme)}}" data-consent="necessary"></script>
+    <script src="{{asset('assets/js/cycle2.tile.min.js'|theme)}}" data-consent="necessary"></script>
+    <script src="{{asset('assets/js/jquery.mask.js'|theme)}}" data-consent="necessary"></script>
+    <script src="{{asset('assets/js/owl.carousel.min.js'|theme)}}" data-consent="necessary"></script>
+    <script src="{{ asset('assets/js/scripts.js'|theme) }}"></script>
+    <script src="{{asset('assets/js/cookie.min.js'|theme)}}" data-cor="#f44e00" data-position="right"></script>
+        {% snowboard all %}
+        {% scripts %}
+    </body>
+</html>
+{% partial "site/header" %}
+
+    {% page %}
+
+{% partial "site/footer" %}
