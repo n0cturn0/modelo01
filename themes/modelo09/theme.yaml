@@ -1,0 +1,9 @@
+name: 'Modelo 09'
+description: 'Custom theme generated for http://localhost/'
+author: 'Luiz Augusto'
+homepage: 'http://localhost/'
+code: winter-cms
+form:
+    fields:
+        googleanalytics_id:
+            label: 'Google Analytics ID'
