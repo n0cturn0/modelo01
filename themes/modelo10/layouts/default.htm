@@ -1,0 +1,39 @@
+description = "Default layout"
+==
+<html>
+    <head>
+     <meta name="description" content="{{ this.page.meta_description }}">
+        <meta name="title" content="{{ this.page.meta_title }}">
+        <meta name="author" content="Winter CMS -  Luiz Augusto">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta name="generator" content="Winter CMS">
+        
+       
+   
+   
+    <link href="{{ 'assets/css/bootstrap-grid.min.css'|theme }}" rel="stylesheet">
+    <link href="{{ 'assets/css/support.min.css'|theme }}" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Oswald:300,400,500|Source+Sans+Pro:400,400i,600,600i&display=swap" rel="stylesheet"> 
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.2/css/all.css">
+    <link href="{{ asset('assets/css/style.min.css'|theme) }}" rel="stylesheet">
+    <script src="{{asset('assets/js/jquery.min.js'|theme)}}"></script>
+    
+    <!-- Favicon -->
+    <link rel="shortcut icon" href="{{asset('assets/imgs/favicon.png'|theme)}}" type="image/x-icon">
+    {% styles %}
+    </head>
+    <body>
+    
+     <!-- Scripts -->
+  
+    <script src="{{ asset('assets/js/scripts.js'|theme) }}"></script>
+    
+        {% snowboard all %}
+        {% scripts %}
+    </body>
+</html>
+{% partial "site/header" %}
+
+    {% page %}
+
+{% partial "site/footer" %}

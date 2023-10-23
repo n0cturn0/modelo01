@@ -1,0 +1,66 @@
+title = "Contato"
+url = "/contato"
+layout = "default"
+is_hidden = 0
+==
+<div class="textos container">
+        <div class="row">
+            <h1 class="main-title"><small>Entre em contato</small> Teremos o prazer em atendê-lo!</h1>
+            <div class="contact col-lg-12">
+                <div class="border">
+                    <h3 class="title-home"><i class="fa fa-map-marker" aria-hidden="true"></i> Endereço</h3>
+                    <p>Nome da Rua, 123 - Bairro | Cidade / UF - CEP: CEP: 12345-000</p>
+                </div>
+            </div>
+            
+            <div class="contact col-lg-4">
+                <div class="border">
+                    <h3 class="title-home"><i class="fa fa-phone" aria-hidden="true"></i>  Telefone</h3>
+                    <p>(00) 1234-5678</p>
+                </div>
+            </div>
+            
+            <div class="contact col-lg-4">
+                <div class="border">
+                    <h3 class="title-home"><i class="fa fa-file" aria-hidden="true"></i>  CRC</h3>
+                    <p>CRC/UF 00000-0</p>
+                </div>
+            </div>
+            
+            <div class="contact col-lg-4">
+                <div class="border">
+                    <h3 class="title-home"><i class="fa fa-envelope" aria-hidden="true"></i> E-mail</h3>
+                    <p>contato@dominio.com.br</p>
+                </div>
+            </div>
+        </div>
+        
+        <div class="row">
+            <form method="POST" id="formcontato" class="d-flex flex-wrap justify-content-between">
+                <div class="col-lg-6">
+                    <input type="text" name="nome" placeholder="Nome" required>
+                    <input type="email" name="email" placeholder="E-mail" required>
+                    <input type="text" name="assunto" placeholder="Assunto" required>
+                </div>
+                <div class="col-lg-6">
+                    <textarea name="mensagem" rows="9" placeholder="Mensagem" required></textarea>
+                </div>
+                
+                <div class="col-lg-6 d-flex">
+                    <img src="captcha.php?l=185&a=50&tf=23&ql=5">
+                    <input type="text" name="palavra" placeholder="digite o texto..." required style="margin-bottom: 0;">
+                </div>
+                <div class="col-lg-6">
+                    <button type="submit" class="pull-right">Enviar</button>
+                </div>
+                <center><p>*Os dados captados nesse formulário não serão utilizados por terceiros, apenas para uso interno de acordo com a <a href="lgpd.php">LGPD</a>. Ao enviar sua mensagem você concorda com nossa política de privacidade.*</p></center>
+                
+                <p id="result"></p>
+            </form>
+        </div>
+        
+        <div class="maps">
+            <iframe src="https://www.google.com/maps/embed?pb=!1m10!1m8!1m3!1d14701.353971270199!2d-49.635017749999996!3d-22.900882550000002!3m2!1i1024!2i768!4f13.1!5e0!3m2!1spt-PT!2sbr!4v1525436970768" width="100%" height="450" frameborder="0" style="border:0" allowfullscreen></iframe>
+        </div>
+        
+    </div>
