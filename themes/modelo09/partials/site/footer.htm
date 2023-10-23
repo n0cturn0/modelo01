@@ -1,17 +1,36 @@
-        <!-- Scripts -->
-        <script src="{{ [
-            '@jquery',
-            '@framework',
-            '@framework.extras',
-
-            'assets/js/app.js',
-        ] | theme }}"></script>
-        {% scripts %}
-
-        {% flash %}
-            <p data-control="flash-message" data-interval="7" class="flashmessage {{ type }}">
-                {{ message }}
-            </p>
-        {% endflash %}
-    </body>
-</html>
+<div class="footer container-fluid">
+        <div class="container">
+            <div class="row">
+                <div class="footer-logo col-lg-12 col-xl-4">
+                    <img src="{{asset('assets/imgs/logo-contabil2.png'|theme)}}" alt="">
+                    <p>Venha fazer uma parceria de Sucesso! Encontre em nossa empresa tudo o que precisa.</p>
+                </div>
+                <div class="col-lg-6 col-xl-5">
+                    <h2 class="title-footer">Links <span>Importantes</span></h2>
+                    <ul class="footer-list">
+                        <li><a href="utilitarios/certidoes.php" target="_blank">Certidões Negativas</a></li>
+                        <li><a href="utilitarios/modelos-documentos.php" target="_blank">Modelos de Documentos</a></li>
+                        <li><a href="utilitarios/agendas.php" target="_blank">Agendas de Obrigações</a></li>
+                        <li><a href="utilitarios/facilitador.php" target="_blank">Facilitador Contábil</a></li>
+                        <li><a href="utilitarios/formularios.php" target="_blank">Formulários Diversos</a></li>
+                        <li><a href="utilitarios/tabelas.php" target="_blank">Tabelas Práticas</a></li>
+                        <li><a href="http://www.receita.fazenda.gov.br/" target="_blank">Receita Federal</a></li>
+                        <li><a href="http://www8.receita.fazenda.gov.br/SimplesNacional/" target="_blank">Simples Nacional</a></li>
+                        <li><a href="http://www.sintegra.gov.br/" target="_blank">Sintegra</a></li>
+                        <li><a href="http://www.mtps.gov.br/" target="_blank">Ministério do Trabalho</a></li>
+                        <li><a href="http://www.previdencia.gov.br/" target="_blank">Previdência Social</a></li>
+                        <li><a href="http://www.brasil.gov.br/" target="_blank">Portal Brasil</a></li>
+                    </ul>
+                </div>
+                <div class="col-lg-6 col-xl-3">
+                    <h2 class="title-footer">Redes <span>Sociais</span></h2>
+                    <p>Interaja conosco pelos nossos perfis e saiba de todas as novidades.</p>
+                    <a href="https://www.facebook.com/" target="_blank" class="fa fa-facebook redes"></a>
+                    <a href="https://twitter.com/" target="_blank" class="fa fa-twitter redes"></a>
+                    <a href="https://www.instagram.com/?hl=pt-br" target="_blank" class="fa fa-instagram redes"></a>
+                    <a href="https://br.linkedin.com/" target="_blank" class="fa fa-linkedin redes"></a>
+                    <p>Desenvolvido por <a href="https://www.sitecontabil.com.br/modelos/" target="_blank">Sitecontabil</a></p>
+                </div>
+            </div>
+        </div>
+    </div>

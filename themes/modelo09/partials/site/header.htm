@@ -18,3 +18,36 @@
         {% set pageTitle = page.title %}
     {% endif %}
     <body class="page-{{ pageId }} layout-{{ this.layout.id }}">
+    <div class="header container-fluid">
+        <div class="row justify-content-between align-items-sm-center flex-wrap">
+            <div class="col-sm-12 col-lg-4 align-items-center justify-content-between flex-wrap">
+               <div class="row">
+                   <div class="col-sm-5 d-flex d-lg-none order-sm-2 align-items-center justify-content-end">
+                       <div class="box">
+                           <div class="nav-menu">
+                                <span></span><span></span><span></span><span></span>
+                            </div>
+                       </div>
+                    </div>
+                    <div class="col-sm-7 col-lg-12 logo d-flex order-sm-1 align-items-center justify-content-center justify-content-sm-start">
+                        <a href="index.php"><img src="{{asset('assets/imgs/logo-contabil.png'|theme)}}" alt="Logo Escritório Contábil"></a>
+                    </div>
+               </div>
+            </div>
+            
+            <div class="col-lg-8">
+              <div class="fundo-menu"></div>
+               <nav id="menu" class="d-flex">
+                    <ul id="mainmenu" class="container d-flex">
+                        <li><a href="index.php">Home</a></li>
+                        <li><a href="quem-somos.php">Quem Somos</a></li>
+                        <li><a href="servicos.php">Serviços</a></li>
+                        <li><a href="lgpd.php">LGPD</a></li>
+                        <li><a href="contato.php">Contato</a></li>
+                        <li><a href="https://sitecontabil.com.br/periodicos/sitecontabil/webmagazine"target="_blank">Informativo</a></li>
+                        <!-- <li><a href="area-do-cliente.php" class="cliente">Área do Cliente</a></li> -->
+                    </ul>
+                </nav>
+            </div>
+        </div>
+    </div>  

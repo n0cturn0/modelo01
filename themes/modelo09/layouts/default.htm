@@ -8,9 +8,9 @@ description = "Default layout"
         <meta name="author" content="Winter CMS -  Luiz Augusto">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <meta name="generator" content="Winter CMS">
-        <link rel="stylesheet" href="assets/css/bootstrap-grid.min.css">
+        <link rel="stylesheet" href="{{asset('assets/css/bootstrap-grid.min.css'|theme)}}">
         <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/latest/css/font-awesome.min.css" />
-        <link rel="stylesheet" href="{{asset('assets/css/style.min.css')}}">
+        <link rel="stylesheet" href="{{asset('assets/css/style.min.css'|theme)}}">
         <script src="{{asset('assets/js/jquery.js'|theme)}}"></script>
     <!-- Favicon -->
     <link rel="shortcut icon" href="{{asset('assets/imgs/favicon.png'|theme)}}" type="image/x-icon">
@@ -20,13 +20,7 @@ description = "Default layout"
     
      <!-- Scripts -->
     <script src="{{asset('assets/js/scripts.js'|theme)}}"></script>
-    <script type="text/javascript" charset="UTF-8">
-    var website_name = window.location.origin;
-    var politica = website_name+'/lgpd.php';
-document.addEventListener('DOMContentLoaded', function () {
-cookieconsent.run({"notice_banner_type":"simple","consent_type":"express","palette":"light","language":"pt","page_load_consent_levels":["strictly-necessary"],"notice_banner_reject_button_hide":false,"preferences_center_close_button_hide":false,"page_refresh_confirmation_buttons":false,"website_name":website_name,"website_privacy_policy_url":politica});
-});
-</script>
+ 
         {% snowboard all %}
         {% scripts %}
     </body>
