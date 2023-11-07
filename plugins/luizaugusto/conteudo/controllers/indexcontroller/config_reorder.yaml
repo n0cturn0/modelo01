@@ -1,0 +1,4 @@
+title: IndexController
+modelClass: Luizaugusto\Conteudo\Models\IndexModel
+toolbar:
+    buttons: reorder_toolbar

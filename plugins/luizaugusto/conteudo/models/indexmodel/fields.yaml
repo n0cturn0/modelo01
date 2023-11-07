@@ -1,0 +1,34 @@
+fields:
+    status:
+        label: Ativo
+        span: full
+        default: 1
+        type: switch
+    tituloprincipal:
+        label: 'Título Principal'
+        span: auto
+        required: 1
+        type: text
+    textoprincipal:
+        label: 'Texto Principal'
+        size: large
+        span: full
+        required: 1
+        type: richeditor
+    subtitulodaimagem:
+        label: 'Título Imagem'
+        span: right
+        required: 1
+        type: text
+    slug:
+        label: Slug
+        span: auto
+        preset:
+            field: textoprincipal
+            type: slug
+        type: text
+        comment: 'não usar caracteres especiais'
+    imagemprincipal:
+        label: 'Imagem Principal'
+        span: left
+        type: text

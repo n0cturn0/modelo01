@@ -1,0 +1,14 @@
+1.0.1:
+    - 'Initialize plugin.'
+1.0.2:
+    - 'Created table luizaugusto_conteudo_index'
+    - builder_table_create_luizaugusto_conteudo_index.php
+1.0.3:
+    - 'Created table luizaugusto_conteudo_nova'
+    - builder_table_create_luizaugusto_conteudo_nova.php
+1.0.4:
+    - 'Drop table luizaugusto_conteudo_nova'
+    - builder_table_delete_luizaugusto_conteudo_nova.php
+1.0.5:
+    - 'Updated table luizaugusto_conteudo_index'
+    - builder_table_update_luizaugusto_conteudo_index.php

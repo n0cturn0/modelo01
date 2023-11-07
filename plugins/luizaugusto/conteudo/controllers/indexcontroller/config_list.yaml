@@ -1,0 +1,12 @@
+title: IndexController
+modelClass: Luizaugusto\Conteudo\Models\IndexModel
+list: $/luizaugusto/conteudo/models/indexmodel/columns.yaml
+recordUrl: 'luizaugusto/conteudo/indexcontroller/update/:id'
+noRecordsMessage: 'backend::lang.list.no_records'
+recordsPerPage: 20
+showSetup: true
+showCheckboxes: true
+toolbar:
+    buttons: list_toolbar
+    search:
+        prompt: 'backend::lang.list.search_prompt'

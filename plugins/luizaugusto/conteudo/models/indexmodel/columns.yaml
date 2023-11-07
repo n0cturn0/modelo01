@@ -1,0 +1,46 @@
+columns:
+    id:
+        label: ID
+        type: number
+        searchable: true
+        sortable: true
+    status:
+        label: Ativo
+        type: switch
+        searchable: true
+        sortable: true
+    tituloprincipal:
+        label: 'Título Principal'
+        type: text
+        searchable: true
+        sortable: true
+    textoprincipal:
+        label: 'Texto Principal'
+        type: text
+        searchable: true
+        sortable: true
+    imagemprincipal:
+        label: imagemprincipal
+        type: text
+        searchable: true
+        sortable: true
+    subtitulodaimagem:
+        label: subtitulodaimagem
+        type: text
+        searchable: true
+        sortable: true
+    created_at:
+        label: created_at
+        type: datetime
+        searchable: true
+        sortable: true
+    updated_at:
+        label: updated_at
+        type: datetime
+        searchable: true
+        sortable: true
+    slug:
+        label: slug
+        type: text
+        searchable: true
+        sortable: true

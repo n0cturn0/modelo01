@@ -1,0 +1,11 @@
+plugin:
+    name: 'luizaugusto.conteudo::lang.plugin.name'
+    description: 'luizaugusto.conteudo::lang.plugin.description'
+    author: LuizAugusto
+    icon: oc-icon-adjust
+    homepage: ''
+navigation:
+    conteudo:
+        label: 'Menu Item'
+        url: luizaugusto/conteudo/indexcontroller
+        icon: icon-book

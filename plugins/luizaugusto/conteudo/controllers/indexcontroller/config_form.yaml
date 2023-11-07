@@ -1,0 +1,10 @@
+name: IndexController
+form: $/luizaugusto/conteudo/models/indexmodel/fields.yaml
+modelClass: Luizaugusto\Conteudo\Models\IndexModel
+defaultRedirect: luizaugusto/conteudo/indexcontroller
+create:
+    redirect: 'luizaugusto/conteudo/indexcontroller/update/:id'
+    redirectClose: luizaugusto/conteudo/indexcontroller
+update:
+    redirect: luizaugusto/conteudo/indexcontroller
+    redirectClose: luizaugusto/conteudo/indexcontroller
